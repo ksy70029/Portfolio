@@ -40,7 +40,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -92,12 +92,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-blue);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -135,8 +143,9 @@ p {
 
 /* Home */
 #home {
-  background: url("images/home-background.png") center/cover no-repeat;
+  background: url('images/home-background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -376,7 +385,7 @@ p {
 }
 
 .project__description h3:after {
-  content: "";
+  content: '';
   width: 25px;
   height: 2px;
   background-color: var(--color-dark-white);
