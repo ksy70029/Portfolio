@@ -40,7 +40,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: default;
 }
 
@@ -144,7 +144,7 @@ p {
 
 /* Home */
 #home {
-  background: url('images/home-background.png') center/cover no-repeat;
+  background: url("images/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -386,7 +386,7 @@ p {
 }
 
 .project__description h3:after {
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   background-color: var(--color-dark-white);
@@ -464,6 +464,27 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
