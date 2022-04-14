@@ -1,346 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suyeon's portfolio</title>
-    <meta
-      name="description"
-      content="portfolio for progressive software engineer Suyeon"
-    />
-    <meta name="author" content="Suyeon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Suyeon's portfolio</title>
+		<meta
+			name="description"
+			content="portfolio for progressive software engineer Suyeon"
+		/>
+		<meta name="author" content="Suyeon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fas fa-fire"></i>
-        <a href="#">Suyeon</a>
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My Work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
-          Testimonials
-        </li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
 
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav id="navbar">
+			<div class="navbar__logo">
+				<a href="#">Suyeon's portfolio</a>
+			</div>
+			<ul class="navbar__menu">
+				<li class="navbar__menu__item" data-link="#home">Home</li>
+				<li class="navbar__menu__item" data-link="#about">About</li>
+				<li class="navbar__menu__item" data-link="#skills">Skills</li>
+				<li class="navbar__menu__item" data-link="#projects">My projects</li>
+				<li class="navbar__menu__item" data-link="#category">Category</li>
+				<li class="navbar__menu__item" data-link="#contact">Contact</li>
+			</ul>
 
-    <!-- Home -->
-    <section id="home">
-      <div class="home__container">
-        <img
-          src="images/profile.jpg"
-          alt="Suyeon's profile photo"
-          class="home__avatar"
-        />
-        <h1 class="home__title">
-          Hello, <br />
-          I'm Dream Coder
-        </h1>
-        <h2 class="home__description">
-          A progressive software Engineer every single day
-        </h2>
-        <button class="home__contact">Contact Me</button>
-      </div>
-    </section>
+			<!-- Toggle button -->
+			<button class="navbar__toggle-btn">
+				<i class="fas fa-bars"></i>
+			</button>
+		</nav>
 
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum officiis
-        quo nesciunt, eum in possimus animi molestiae aliquid nobis explicabo,
-        cum obcaecati enim at ab voluptates illum. Officiis, dignissimos sit.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon"><i class="fab fa-html5"></i></div>
-          <h2 class="major__title">HTML</h2>
-          <div class="major__description">
-            Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon"><i class="fab fa-css3-alt"></i></div>
-          <h2 class="major__title">CSS</h2>
-          <div class="major__description">
-            Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon"><i class="fab fa-js-square"></i></div>
-          <h2 class="major__title">Javascript</h2>
-          <div class="major__description">
-            Lorem, ipsum dolor sit amet <br />consectetur adipisicing elit.
-          </div>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img
-            src="images/jobs/IFT-logo.png"
-            alt="IFT-logo"
-            class="job__logo"
-          />
-          <div class="job__description">
-            <p class="job__name">Currently working at IFT as Publisher</p>
-            <p class="job__period">2020.12 - Until now</p>
-          </div>
-        </div>
-        <div class="job">
-          <img
-            src="images/jobs/IFT-logo.png"
-            alt="IFT-logo"
-            class="job__logo"
-          />
-          <div class="job__description">
-            <p class="job__name">Currently working at IFT as Publisher</p>
-            <p class="job__period">2020.12 - Until now</p>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- Home -->
+		<section id="home">
+			<img src="images/person.png" alt="telescope" class="home__character" />
+			<div class="home__container">
+				<img
+					src="images/profile.jpg"
+					alt="Suyeon's profile photo"
+					class="home__avatar"
+				/>
+				<h1 class="home__title">메타인지하는 개발자</h1>
+				<h2 class="home__description">프론트엔드 개발자 김수연입니다</h2>
+				<button class="home__contact">Contact Me</button>
+			</div>
+		</section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          Experience with all phases of the software llife-cycle. passion for
-          learning new technologies. capable of working within a team
-          environment and independently. Ability to plan and time schedule, work
-          under strict time pressure and adapt quickly when needed.
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Javascript</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio code</span></li>
-                <li><span>Atom</span></li>
-                <li><span>Sublime Text</span></li>
-                <li><span>Brackets</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>English</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- About -->
+		<section id="about" class="section section__container">
+			<h1>About me</h1>
+			<h3 class="about__tag">
+				#메타인지 #자기성찰 #신입개발자 #프론트엔드개발자
+			</h3>
+			<p>
+				내가 무엇을 알고 모르는지 객관적으로 관찰하고 부족한 부분을 보완하기
+				위해 <br />계획을 세우고 실행하는 과정에 의미를 두고자 합니다. <br />
+				자신의 상태를 잘 안다면 상황을 피하거나 두려워 하기보다 무엇이든 시도할
+				수 있습니다. <br />
+				또한 풀고자 하는 문제가 무엇인지, 왜 하는지 사고하며 인지하려 노력하고
+				있습니다.
+			</p>
+			<div class="about__introduce">
+				<div class="introduce">
+					<div class="introduce__icon"><i class="fa-solid fa-user"></i></div>
+					<h2 class="introduce__title">이름</h2>
+					<div class="introduce__description">김수연</div>
+				</div>
+				<div class="introduce">
+					<div class="introduce__icon">
+						<i class="fa-solid fa-calendar"></i>
+					</div>
+					<h2 class="introduce__title">생년월일</h2>
+					<div class="introduce__description">93.07.29</div>
+				</div>
+				<div class="introduce">
+					<div class="introduce__icon">
+						<i class="fa-solid fa-graduation-cap"></i>
+					</div>
+					<h2 class="introduce__title">학력</h2>
+					<div class="introduce__description">대전대학교(행정학전공)</div>
+				</div>
 
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1>My Work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">8</span>
-          </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end <span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="back-end">
-            Back-end <span class="category__count">3</span>
-          </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile <span class="category__count">2</span>
-          </button>
-        </div>
+				<div class="introduce introduce50">
+					<div class="introduce__icon">
+						<i class="fa-solid fa-building"></i>
+					</div>
+					<h2 class="introduce__title">경력</h2>
+					<div class="introduce__description">
+						<div class="job__description">
+							<p class="job__name">
+								그린컴퓨터아카데미 웹디자인&웹퍼블리셔 과정 수료
+							</p>
+							<p class="job__period">2020.05 - 2020.09</p>
+						</div>
+						<div class="job__description">
+							<p class="job__name">(주)IFT 디지인 및 퍼블리싱</p>
+							<p class="job__period">2020.11 - 2021.08</p>
+						</div>
+						<div class="job__description">
+							<p class="job__name">금산군청소년상담복지센터 웹사이트 제작</p>
+							<p class="job__period">2020.09 - 2020.12</p>
+						</div>
+					</div>
+				</div>
+				<div class="introduce introduce50">
+					<div class="introduce__icon"><i class="fa-solid fa-id-card"></i></div>
+					<h2 class="introduce__title">자격증</h2>
+					<div class="introduce__description">
+						<div class="job__description">
+							<p class="job__name">컴퓨터그래픽스운용기능사</p>
+							<p class="job__period">2020.10.08</p>
+						</div>
+						<div class="job__description">
+							<p class="job__name">웹디자인기능사</p>
+							<p class="job__period">2020.09.25</p>
+						</div>
+						<div class="job__description">
+							<p class="job__name">GTQ일러스트 1급</p>
+							<p class="job__period">2020.09.11</p>
+						</div>
+						<div class="job__description">
+							<p class="job__name">GTQ그래픽기술자격 1급</p>
+							<p class="job__period">2020.08.14</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="work__projects">
-          <a
-            href="http://ift-edutech.com/"
-            class="project"
-            target="_blank"
-            data-type="front-end"
-          >
-            <img
-              src="images/projects/IFT_mockup.jpg"
-              alt="IFT"
-              class="Project__img"
-            />
-            <div class="project__description">
-              <h3>IFT Site</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="http://ift-edutech.com/"
-            class="project"
-            target="_blank"
-            data-type="back-end"
-          >
-            <img
-              src="images/projects/IFT_mockup.jpg"
-              alt="IFT"
-              class="Project__img"
-            />
-            <div class="project__description">
-              <h3>IFT Site</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="http://ift-edutech.com/"
-            class="project"
-            target="_blank"
-            data-type="mobile"
-          >
-            <img
-              src="images/projects/IFT_mockup.jpg"
-              alt="IFT"
-              class="Project__img"
-            />
-            <div class="project__description">
-              <h3>IFT Site</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-            href="http://ift-edutech.com/"
-            class="project"
-            target="_blank"
-            data-type="front-end"
-          >
-            <img
-              src="images/projects/IFT_mockup.jpg"
-              alt="IFT"
-              class="Project__img"
-            />
-            <div class="project__description">
-              <h3>IFT Site</h3>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+		<!-- Skills -->
+		<section id="skills" class="section">
+			<div class="section__container">
+				<h1>Skills</h1>
+				<div class="skillset">
+					<div class="skillset__left">
+						<h2 class="skillset__title">Frontend</h2>
+						<div class="skill">
+							<img src="./images/skills/frontend.png" alt="frontend" />
+						</div>
+					</div>
+					<div class="skillset__right">
+						<div class="backend">
+							<h2 class="skillset__title">Backend</h2>
+							<div class="skill">
+								<img src="./images/skills/backend.png" alt="backend" />
+							</div>
+						</div>
+						<div class="etc">
+							<h2 class="skillset__title">Etc</h2>
+							<div class="skill">
+								<img src="./images/skills/etc.png" alt="etc" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="images/testimonials/testimonial_1.png"
-              alt="people"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur impedit dolores aut excepturi saepe dolore, delectus
-                sunt voluptatum voluptatibus tempore odit laboriosam temporibus,
-                iure fuga accusantium commodi corporis officiis esse.
-              </p>
-              <p class="name"><a href="#">John</a> / Samsung</p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur impedit dolores aut excepturi saepe dolore, delectus
-                sunt voluptatum voluptatibus tempore odit laboriosam temporibus,
-                iure fuga accusantium commodi corporis officiis esse.
-              </p>
-              <p class="name"><a href="#">Jisu</a> / LG</p>
-            </div>
-            <img
-              src="images/testimonials/testimonial_2.png"
-              alt="people"
-              class="testimonial__avatar"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- Projects -->
+		<section id="projects" class="section">
+			<div class="section__container">
+				<h1>My projects</h1>
+				<div class="project__container">
+					<h2 class="project__title">ReactJS로 영화 웹서비스 만들기</h2>
+					<div class="project__wrap">
+						<div class="project__capture">
+							<div>
+								<img
+									src="./images/projects/react-movies.png"
+									alt="react-movies"
+								/>
+							</div>
+							<div>
+								<img
+									src="./images/projects/react-movies2.png"
+									alt="react-movies2"
+								/>
+							</div>
+						</div>
+						<div class="project__text">
+							<div class="project__main-description">
+								평점 8.5 이상의 영화들을 추천해주고 영화에 대한 상세정보를
+								보여주는 사이트.
+								<br />
+								<br />
+								함수 기반 컴포넌트 작성법을 익혀 간편하게 리액트를 이용할 수
+								있게 되었습니다. 영화 API를 사용하여 조건에 맞는 영화 정보를
+								가져올 수 있게 되었습니다.
+							</div>
+							<hr />
+							<ul class="project__sub-description">
+								<li>
+									<span>배운 이론</span>
+									<p>
+										JSX, State, Props, Class, components, Date Fetching,
+										Routing..
+									</p>
+								</li>
+								<li>
+									<span>Github</span
+									><a href="https://github.com/ksy70029/react-my-app"
+										>https://github.com/ksy70029/react-my-app</a
+									>
+								</li>
+								<li>
+									<span>URL</span
+									><a href="https://ksy70029.github.io/react-my-app/"
+										>https://ksy70029.github.io/react-my-app/</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="project__container">
+					<h2 class="project__title">Vanilla Javascript로 크롬 앱 만들기</h2>
+					<div class="project__wrap">
+						<div class="project__capture">
+							<div>
+								<img
+									src="./images/projects/JS_chrome1.png"
+									alt="react-movies"
+								/>
+							</div>
+							<div>
+								<img
+									src="./images/projects/JS_chrome2.png"
+									alt="react-movies2"
+								/>
+							</div>
+						</div>
+						<div class="project__text">
+							<div class="project__main-description">
+								현재시간, 현재 사용자 위치의 날씨를 보여주고, Todo list를 작성
+								및 관리할 수 있습니다. 명언과 배경사진을 랜덤으로 바꿔줍니다.
+								로그인 했던 사용자를 기억하여 매번 다시 로그인 해야 하는
+								번거로움을 줄였습니다.
+							</div>
+							<hr />
+							<ul class="project__sub-description">
+								<li>
+									<span>배운 이론</span>
+									<p>
+										JS, AJAX, JSON, DOM, Fetch, Openweather API, LocalStorage..
+									</p>
+								</li>
+								<li>
+									<span>Github</span
+									><a href="https://github.com/ksy70029/js_chrome"
+										>https://github.com/ksy70029/js_chrome</a
+									>
+								</li>
+								<li>
+									<span>URL</span
+									><a href="https://ksy70029.github.io/js_chrome/"
+										>https://ksy70029.github.io/js_chrome/</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="project__container">
+					<h2 class="project__title">금산군 청소년 상담복지센터</h2>
+					<div class="project__wrap">
+						<div class="project__capture">
+							<div>
+								<img src="./images/projects/gs1.png" alt="react-movies" />
+							</div>
+							<div>
+								<img src="./images/projects/gs2.png" alt="react-movies2" />
+							</div>
+							<div>
+								<img src="./images/projects/gs3.png" alt="react-movies2" />
+							</div>
+							<div>
+								<img src="./images/projects/gs4.png" alt="react-movies2" />
+							</div>
+							<div>
+								<img src="./images/projects/gs5.png" alt="react-movies2" />
+							</div>
+							<div>
+								<img src="./images/projects/gs6.png" alt="react-movies2" />
+							</div>
+						</div>
+						<div class="project__text">
+							<div class="project__main-description">
+								그누보드를 활용하여 금산군상담복지센터 사이트를 제작하였습니다.
+								<br />
+								<br />
+								금산군상담복지센터와 꿈드림센터에 대해서 소개하고, 상담이 필요한
+								청소년 및 금산군 시민들이 쉽게 정보 및 소식들을 나눌 수 있도록
+								게시판 및 갤러리 등을 배치하였습니다. 또한 서비스를 이용하는
+								시민들은 상담 종류에 따라 간편하게 신청할 수 있도록 만들었으며
+								서비스를 제공하는 금산군상담센터 직원들은 상담신청이 오면 알람을
+								받을 수 있는 기능을 추가하였습니다. 또한 pc에서 뿐만 아니라
+								모바일에서도 쉽게 이용할 수 있게 반응형으로 제작하였습니다.
+							</div>
+							<hr />
+							<ul class="project__sub-description">
+								<li>
+									<span>Design</span>
+									<p>
+										<button class="project__design">
+											디자인시안 바로가기 >
+										</button>
+									</p>
+								</li>
+								<li>
+									<span>Frontend</span>
+									<p>HTML, CSS, JS, jQuery</p>
+								</li>
+								<li>
+									<span>Backend</span>
+									<p>gnuboard, php, mySQL, phpMyadmin</p>
+								</li>
+								<li>
+									<span>URL</span
+									><a href="http://www.gs1388.or.kr/"
+										>http://www.gs1388.or.kr/</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="project__container">
+					<h2 class="project__title">포트폴리오 웹사이트</h2>
+					<div class="project__wrap">
+						<div class="project__capture">
+							<div>
+								<img src="./images/projects/pf1.png" alt="Portfolio" />
+							</div>
+							<div>
+								<img src="./images/projects/pf2.png" alt="Portfolio" />
+							</div>
+							<div>
+								<img src="./images/projects/pf3.png" alt="Portfolio" />
+							</div>
+							<div>
+								<img src="./images/projects/pf4.png" alt="Portfolio" />
+							</div>
+							<div>
+								<img src="./images/projects/pf5.png" alt="Portfolio" />
+							</div>
+						</div>
+						<div class="project__text">
+							<div class="project__main-description">
+								포트폴리오 용도로 제작한 지금 보고 있는 웹사이트 입니다.
+								<br />
+								<br />
+								간단한 자기소개, 인적 사항, 기술 스택, Github, 프로젝트 경험,
+								업무 경력 등.
+							</div>
+							<hr />
+							<ul class="project__sub-description">
+								<li>
+									<span>배운 이론</span>
+									<p>
+										:root를 이용한 전역 CSS 변수 선언, BEM 등을 이용한 효율적인
+										마크업, 전체적인 웹사이트 구조 정리, Vallia JavaScript
+									</p>
+								</li>
+								<li>
+									<span>Github</span
+									><a href="https://github.com/ksy70029/Portfolio"
+										>https://github.com/ksy70029/Portfolio</a
+									>
+								</li>
+								<li>
+									<span>URL</span
+									><a href="https://ksy70029.github.io/Portfolio/">
+										https://ksy70029.github.io/Portfolio/</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">ksy70029@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/ksy70029" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <p class="contact__rights">
-        2020 Dream Coding Suyeon - All right reserved
-      </p>
-    </section>
+		<!-- Category -->
+		<section id="category" class="section">
+			<div class="section__container">
+				<h1>Category</h1>
+				<h3>Projects</h3>
+				<div class="work__categories">
+					<button class="category__btn selected" data-filter="*">
+						All <span class="category__count">8</span>
+					</button>
+					<button class="category__btn" data-filter="design">
+						Design<span class="category__count">6</span>
+					</button>
+					<button class="category__btn" data-filter="front-end">
+						Front-end <span class="category__count">3</span>
+					</button>
+					<button class="category__btn" data-filter="back-end">
+						Back-end <span class="category__count">3</span>
+					</button>
+					<button class="category__btn" data-filter="mobile">
+						Mobile <span class="category__count">2</span>
+					</button>
+				</div>
 
-    <!-- Arrow Up -->
-    <button class="arrow-up">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </body>
+				<div class="work__projects">
+					<a
+						href="https://forested-link-2e3.notion.site/1-54a106d2fe88412695f34582e869ef32"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS1.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 1</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="https://forested-link-2e3.notion.site/2-96d6ab4623fc4e42a6d44341f5f13660"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS2.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 2</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="https://forested-link-2e3.notion.site/3-ada3fd8d59a14372a24bf8a13951b076"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS3.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 3</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="https://forested-link-2e3.notion.site/4-6ce41ff19c404569905c51682d235414"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS4.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 4</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="https://forested-link-2e3.notion.site/5-1eed59905421431a869c0b7919b52a88"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS5.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 5</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="https://forested-link-2e3.notion.site/6-bf81ecc669b94858a3b6a44bd62f0357"
+						class="project"
+						target="_blank"
+						data-type="design"
+					>
+						<img
+							src="images/projects/DS6.PNG"
+							alt="design1"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>디자인 시안 6</h3>
+							<span>금산군상담복지센터 디자인 시안</span>
+						</div>
+					</a>
+					<a
+						href="http://ift-edutech.com/"
+						class="project"
+						target="_blank"
+						data-type="front-end"
+						data-type2="mobile"
+					>
+						<img
+							src="images/projects/IFT_mockup.jpg"
+							alt="IFT"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>IFT Site</h3>
+							<span>기획, 디자인을 포함한 회사 사이트 제작</span>
+						</div>
+					</a>
+					<a
+						href="https://ksy70029.github.io/kokoa-clone-2021/"
+						class="project"
+						target="_blank"
+						data-type="mobile"
+					>
+						<img
+							src="images/projects/kokoa.png"
+							alt="kokoatalk"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>kokoa-clone</h3>
+							<span
+								>Clone coding with HTML and CSS <br />
+								<!-- <a href="https://github.com/ksy70029/kokoa-clone-2021"
+									>https://github.com/ksy70029/kokoa-clone-2021</a
+								> -->
+							</span>
+						</div>
+					</a>
+					<a
+						href="http://www.gs1388.or.kr/"
+						class="project"
+						target="_blank"
+						data-type="front-end"
+						data-type2="back-end"
+					>
+						<img
+							src="images/projects/GS.png"
+							alt="금산군청소년상담복지센터"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>금산군청소년상담복지센터</h3>
+							<span
+								>그누보드 활용하여 사이트 제작 <br />(기획, 디자인, 프론트엔드,
+								백엔드)</span
+							>
+						</div>
+					</a>
+					<a
+						href="http://ift-edutech.com/"
+						class="project"
+						target="_blank"
+						data-type="mobile"
+					>
+						<img
+							src="images/projects/GS_pbone.png"
+							alt="금산군청소년상담센터"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>금산군청소년복지센터</h3>
+							<span>모바일버전(모바일로 확인하세요)</span>
+						</div>
+					</a>
+					<a
+						href="
+            https://ksy70029.github.io/react-my-app/"
+						class="project"
+						target="_blank"
+						data-type="front-end"
+					>
+						<img
+							src="images/projects/react-movies.png"
+							alt="react-movies"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>영화 웹서비스</h3>
+							<span>ReactJS로 웹서비스 만들기</span>
+						</div>
+					</a>
+					<a
+						href="https://github.com/ksy70029/js_chrome"
+						class="project"
+						target="_blank"
+						data-type="front-end"
+					>
+						<img
+							src="images/projects/JS_chrome1.png"
+							alt="JS_chrome"
+							class="Project__img"
+						/>
+						<div class="project__description">
+							<h3>크롬 앱</h3>
+							<span>Vanilla Javascript로 크롬 앱 만들기 </span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<h1 class="contact__title">Contact</h1>
+			<h3 class="contact__me">
+				E-mail : ksy70029@gmail.com | Tel : 010-8405-3324 |
+				<a href="https://github.com/ksy70029" target="_blank">
+					&nbsp;<i class="fab fa-github"></i>
+				</a>
+			</h3>
+			<p class="contact__rights">&copy; 2022. Suyeon. All right reserved.</p>
+		</section>
+
+		<!-- Arrow Up -->
+		<button class="arrow-up">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".project__capture").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					arrows: true,
+				});
+			});
+		</script>
+	</body>
 </html>
